@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       int Princple,Time,Rate;
+        Scanner s=new Scanner(System.in);
+        Princple=s.nextInt();
+        Time=s.nextInt();
+        Rate=s.nextInt();
+        float Intrest=Princple*Time*Rate/100;
+        float Amount=Princple+Intrest;
+        float Discount=Intrest*2/100;
+        float Final=Amount-Discount;
+        System.out.println(String.format("%.2f",Intrest));
+        System.out.println(String.format("%.2f",Amount));
+        System.out.println(String.format("%.2f",Discount));
+        System.out.println(String.format("%.2f",Final));
+        
+    }
+}
