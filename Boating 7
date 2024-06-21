@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int weight,adults,children;
+        Scanner s=new Scanner(System.in);
+        weight=s.nextInt();
+        adults=s.nextInt();
+        children=s.nextInt();
+        int total=(adults*75)+(children*30);
+        if(total>weight){
+        System.out.println("Boat will drown");
+        }
+            else{
+                System.out.print("Boat is stable");
+            }
+        
+    }
+}
