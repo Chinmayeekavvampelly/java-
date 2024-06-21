@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       int side,length,breadth;
+        float radius;
+        Scanner s=new Scanner(System.in);
+        side=s.nextInt();
+        length=s.nextInt();
+        breadth=s.nextInt();
+        radius=s.nextFloat();
+        int square,rectangle;
+        float circle;
+        square=side*side;
+        rectangle=length*breadth;
+        circle=(float)3.14*radius*radius;
+        System.out.println(square);
+        System.out.println(rectangle);
+        System.out.println(String.format("%.2f",circle));
+        
+        
+        
+
+        
+        
+    }
+}
